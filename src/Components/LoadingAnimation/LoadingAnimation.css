@@ -1,0 +1,18 @@
+.loading_animation_outer {
+  display: flex;
+  justify-content: center;
+}
+
+.loading_animation_outer .loading_animation_inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.loading_animation_outer .loading_animation_inner img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.loading_animation_outer .loading_animation_inner .loading_label {
+  color: rgb(31, 129, 221);
+}

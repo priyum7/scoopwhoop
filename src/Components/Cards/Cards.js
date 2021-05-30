@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card/Card";
 import "./Cards.css";
+import LoadingAnimation from "../LoadingAnimation/LoadingAnimation";
+
 function Cards() {
   const [articles, setArticles] = useState(undefined);
 
@@ -16,24 +18,27 @@ function Cards() {
   console.log(articles);
 
   return (
-    <div className="cards_grid">
-      {articles &&
-        articles.map((article) => (
-          <Card
-            key={article.article_id}
-            category={article.category[0].toUpperCase()}
-            imagePath={article.feature_img}
-            title={article.title}
-            authorName={article.auth_display.display_name}
-            publishedDays={
-              new Date().getDate() - new Date(article.pub_date).getDate() - 1
-            }
-            readTime={article.readtime}
-            articleUrl={article.slug}
-            authorUrl={article.auth_display.author_url}
-          />
-        ))}
-    </div>
+    <>
+      <div className="cards_grid">
+        {articles &&
+          articles.map((article) => (
+            <Card
+              key={article.article_id}
+              category={article.category[0].toUpperCase()}
+              imagePath={article.feature_img}
+              title={article.title}
+              authorName={article.auth_display.display_name}
+              publishedDays={
+                new Date().getDate() - new Date(article.pub_date).getDate() - 1
+              }
+              readTime={article.readtime}
+              articleUrl={article.slug}
+              authorUrl={article.auth_display.author_url}
+            />
+          ))}
+      </div>
+      <LoadingAnimation />
+    </>
   );
 }
 

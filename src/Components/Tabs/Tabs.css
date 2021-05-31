@@ -1,0 +1,22 @@
+.tabs_inner {
+  display: flex;
+}
+
+.tabs_outer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.tabs_outer:after {
+  width: 100%;
+  border: 0;
+  content: "";
+  display: block;
+  background: linear-gradient(158.35deg, #1b91ff 0, #9f49e3 113.59%);
+  height: 1px;
+}

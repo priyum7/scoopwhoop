@@ -1,0 +1,17 @@
+.tab {
+  width: 148px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 128.47%;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #efefef;
+  color: #999696;
+}
+
+.is_selected {
+  background: linear-gradient(158.35deg, #1b91ff 0, #9f49e3 113.59%);
+  color: #fff;
+}

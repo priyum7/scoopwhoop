@@ -1,0 +1,21 @@
+.footer_outer {
+  padding-bottom: 28px;
+  padding-top: 45px;
+  position: relative;
+}
+
+.footer_outer:before {
+  width: 100%;
+  max-width: 614px;
+  height: 2px;
+  background: linear-gradient(136.04deg, #ffec41 -0.78%, #ffb341 92.66%)
+    no-repeat;
+  content: "";
+  position: absolute;
+}
+
+.footer_inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

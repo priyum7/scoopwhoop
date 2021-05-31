@@ -31,32 +31,34 @@ function Cards() {
 
   return (
     <>
-      <InfiniteScroll
-        dataLength={articles.length}
-        next={loadMoreArticles}
-        hasMore={true}
-        loader={<LoadingAnimation />}
-        scrollThreshold={"10px"}
-      >
-        <div className="cards_grid">
-          {articles &&
-            articles.map((article) => (
-              <Card
-                key={article.article_id}
-                category={article.category[0]?.toUpperCase()}
-                imagePath={article.feature_img}
-                title={article.title}
-                authorName={article.auth_display.display_name}
-                publishedDays={
-                  new Date().getDate() - new Date(article.pub_date).getDate()
-                }
-                readTime={article.readtime}
-                articleUrl={article.slug}
-                authorUrl={article.auth_display.author_url}
-              />
-            ))}
-        </div>
-      </InfiniteScroll>
+      <div className="cards_container">
+        <InfiniteScroll
+          dataLength={articles.length}
+          next={loadMoreArticles}
+          hasMore={true}
+          loader={<LoadingAnimation />}
+          scrollThreshold={"10px"}
+        >
+          <div className="cards_grid">
+            {articles &&
+              articles.map((article) => (
+                <Card
+                  key={article.article_id}
+                  category={article.category[0]?.toUpperCase()}
+                  imagePath={article.feature_img}
+                  title={article.title}
+                  authorName={article.auth_display.display_name}
+                  publishedDays={
+                    new Date().getDate() - new Date(article.pub_date).getDate()
+                  }
+                  readTime={article.readtime}
+                  articleUrl={article.slug}
+                  authorUrl={article.auth_display.author_url}
+                />
+              ))}
+          </div>
+        </InfiniteScroll>
+      </div>
     </>
   );
 }

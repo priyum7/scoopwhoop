@@ -1,7 +1,4 @@
 .headerinfo_outer {
-  position: absolute;
-  bottom: 47px;
-  left: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -46,4 +43,24 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.responsive_headerinfo {
+  position: absolute;
+  bottom: 47px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerinfo_outer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .headerinfo_outer {
+    width: 1200px;
+  }
 }

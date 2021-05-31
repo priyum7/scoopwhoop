@@ -27,7 +27,7 @@ function Card(props) {
       </div>
       <div className="article_category">
         <a
-          href={`${baseUrl}category/${props.category.toLowerCase()}/${urlSuffix}`}
+          href={`${baseUrl}category/${props.category?.toLowerCase()}/${urlSuffix}`}
         >
           {props.category}
         </a>

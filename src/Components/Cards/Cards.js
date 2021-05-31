@@ -14,10 +14,6 @@ function Cards() {
     )
       .then((res) => res.json())
       .then((res) => {
-        // console.log("articles");
-        console.log(articles);
-        // console.log("newdata");
-        // console.log(res.data);
         setArticles(articles.concat(res.data));
         setTotalPosts(totalPosts + 8);
       })
@@ -33,8 +29,6 @@ function Cards() {
       .catch((e) => console.error(e));
   }, []);
 
-  //console.log(articles);
-
   return (
     <>
       <InfiniteScroll
@@ -42,14 +36,14 @@ function Cards() {
         next={loadMoreArticles}
         hasMore={true}
         loader={<LoadingAnimation />}
-        scrollThreshold="0px"
+        scrollThreshold={0.9}
       >
         <div className="cards_grid">
           {articles &&
             articles.map((article) => (
               <Card
                 key={article.article_id}
-                category={article.category[0].toUpperCase()}
+                category={article.category[0]?.toUpperCase()}
                 imagePath={article.feature_img}
                 title={article.title}
                 authorName={article.auth_display.display_name}

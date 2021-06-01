@@ -30,6 +30,7 @@ function MobileCards() {
   }, []);
   return (
     <InfiniteScroll
+      style={{ overflow: "hidden" }}
       dataLength={articles.length}
       next={loadMoreArticles}
       hasMore={true}

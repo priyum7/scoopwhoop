@@ -26,11 +26,6 @@ const generateTimefromNow = (timeDifference) => {
   return `${tempTime} ${tempTime === 1 ? "year ago" : "years ago"}`;
 };
 
-const truncateNumbers = (value) => {
-  if (value < 1000) return `${value}`;
-  else return `${Math.ceil(value / 1000, 0)}K`;
-};
-
 const baseUrl = "https://www.scoopwhoop.com/";
 const urlSuffix = "?ref=read_fresh";
 
@@ -42,7 +37,6 @@ function MobileCard(props) {
           <img src={props.imagePath} alt="Article" />{" "}
         </a>
       </div>
-
       <div className="article_category">
         <a
           href={`${baseUrl}category/${props.category?.toLowerCase()}/${urlSuffix}`}
@@ -50,15 +44,6 @@ function MobileCard(props) {
           {props.category}
         </a>
       </div>
-
-      <div className="article_shares_views">
-        {`${truncateNumbers(props.shares)} ${
-          props.shares === 1 ? "share" : "shares"
-        } | ${truncateNumbers(props.views)} ${
-          props.views === 1 ? "view" : "views"
-        }`}
-      </div>
-
       <div className="article_title">
         <a href={`${baseUrl}${props.articleUrl}${urlSuffix}`}>
           <h4>{props.title}</h4>
@@ -69,9 +54,10 @@ function MobileCard(props) {
           {props.authorName}
         </a>
       </div>
-      <div className="article_publishdate">
-        {`${generateTimefromNow(props.publishTimefromNow)}`}
-      </div>
+      <div className="article_publishdate_readtime">{`${generateTimefromNow(
+        props.publishTimefromNow
+      )}  | 
+      ${props.readTime}`}</div>
     </div>
   );
 }

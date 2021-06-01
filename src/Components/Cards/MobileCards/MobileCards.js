@@ -33,7 +33,7 @@ function MobileCards() {
       dataLength={articles.length}
       next={loadMoreArticles}
       hasMore={true}
-      loader={<LoadingAnimation />}
+      loader={<LoadingAnimation mobile />}
       scrollThreshold={0.99}
     >
       <div className="mobile_cards_layout">

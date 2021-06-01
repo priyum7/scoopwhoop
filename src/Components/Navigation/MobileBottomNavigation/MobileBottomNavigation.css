@@ -1,0 +1,28 @@
+.mobile_bottom_navigation_outer {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background: linear-gradient(156.31deg, #9f49e3 3.34%, #1e82de 128.25%);
+}
+
+.mobile_bottom_navigation_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cccde8;
+}
+
+.bottom_navigation_text {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 5px;
+}

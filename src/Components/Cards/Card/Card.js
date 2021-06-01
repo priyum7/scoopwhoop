@@ -1,17 +1,29 @@
 import React from "react";
 import "./Card.css";
 
-const getDateSuffix = (publishedDays) => {
-  console.log(publishedDays);
-  if (publishedDays === 1) return `${publishedDays} day ago `;
-  else if (publishedDays <= 6) return `${publishedDays} days ago `;
-  else if (publishedDays < 14)
-    return `${Math.floor(publishedDays / 7)} week ago `;
-  else if (publishedDays < 30)
-    return `${Math.floor(publishedDays / 7)} weeks ago `;
-  else if (publishedDays < 60)
-    return `${Math.floor(publishedDays / 30)} month ago `;
-  else return `${Math.floor(publishedDays / 30)} months ago `;
+const generateTimefromNow = (timeDifference) => {
+  let tempTime = Math.floor(timeDifference / 1000);
+  if (tempTime <= 60)
+    return `${tempTime} ${tempTime === 1 ? "second ago" : "seconds ago"}`;
+
+  tempTime = Math.floor(tempTime / 60);
+  if (tempTime <= 60)
+    return `${tempTime} ${tempTime === 1 ? "minute ago" : "minutes ago"}`;
+
+  tempTime = Math.floor(tempTime / 60);
+  if (tempTime <= 60)
+    return `${tempTime} ${tempTime === 1 ? "hour ago" : "hours ago"}`;
+
+  tempTime = Math.floor(tempTime / 24);
+  if (tempTime <= 30)
+    return `${tempTime} ${tempTime === 1 ? "day ago" : "days ago"}`;
+
+  tempTime = Math.floor(tempTime / 30);
+  if (tempTime <= 12)
+    return `${tempTime} ${tempTime === 1 ? "month ago" : "months ago"}`;
+
+  tempTime = Math.floor(tempTime / 12);
+  return `${tempTime} ${tempTime === 1 ? "year ago" : "years ago"}`;
 };
 
 const baseUrl = "https://www.scoopwhoop.com/";
@@ -42,8 +54,8 @@ function Card(props) {
           {props.authorName}
         </a>
       </div>
-      <div className="article_publishdate_readtime">{`${getDateSuffix(
-        props.publishedDays
+      <div className="article_publishdate_readtime">{`${generateTimefromNow(
+        props.publishTimefromNow
       )}  | 
       ${props.readTime}`}</div>
     </div>

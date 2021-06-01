@@ -37,7 +37,7 @@ function Cards() {
           next={loadMoreArticles}
           hasMore={true}
           loader={<LoadingAnimation />}
-          scrollThreshold={"10px"}
+          scrollThreshold={0.99}
         >
           <div className="cards_grid">
             {articles &&
@@ -48,9 +48,7 @@ function Cards() {
                   imagePath={article.feature_img}
                   title={article.title}
                   authorName={article.auth_display.display_name}
-                  publishedDays={
-                    new Date().getDate() - new Date(article.pub_date).getDate()
-                  }
+                  publishTimefromNow={new Date() - new Date(article.pub_date)}
                   readTime={article.readtime}
                   articleUrl={article.slug}
                   authorUrl={article.auth_display.author_url}

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/scoopwhoop/static/css/main.0e3811b6.chunk.css",
+    "main.js": "/scoopwhoop/static/js/main.27087dd1.chunk.js",
+    "main.js.map": "/scoopwhoop/static/js/main.27087dd1.chunk.js.map",
+    "runtime-main.js": "/scoopwhoop/static/js/runtime-main.2e857c69.js",
+    "runtime-main.js.map": "/scoopwhoop/static/js/runtime-main.2e857c69.js.map",
+    "static/js/2.0870470f.chunk.js": "/scoopwhoop/static/js/2.0870470f.chunk.js",
+    "static/js/2.0870470f.chunk.js.map": "/scoopwhoop/static/js/2.0870470f.chunk.js.map",
+    "static/js/3.b3fc7075.chunk.js": "/scoopwhoop/static/js/3.b3fc7075.chunk.js",
+    "static/js/3.b3fc7075.chunk.js.map": "/scoopwhoop/static/js/3.b3fc7075.chunk.js.map",
+    "index.html": "/scoopwhoop/index.html",
+    "static/css/main.0e3811b6.chunk.css.map": "/scoopwhoop/static/css/main.0e3811b6.chunk.css.map",
+    "static/js/2.0870470f.chunk.js.LICENSE.txt": "/scoopwhoop/static/js/2.0870470f.chunk.js.LICENSE.txt",
+    "static/media/scoopwhoop_logo.dd682521.png": "/scoopwhoop/static/media/scoopwhoop_logo.dd682521.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e857c69.js",
+    "static/js/2.0870470f.chunk.js",
+    "static/css/main.0e3811b6.chunk.css",
+    "static/js/main.27087dd1.chunk.js"
+  ]
+}

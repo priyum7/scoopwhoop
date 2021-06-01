@@ -1,0 +1,6 @@
+.mobile_cards_layout {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}

@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer";
 
 import MobileHeader from "./Components/Header/MobileHeader/MobileHeader";
 import MobileTabs from "./Components/Tabs/MobileTabs/MobileTabs";
+import MobileCards from "./Components/Cards/MobileCards/MobileCards";
 
 import { useEffect, useState } from "react";
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <>
         <MobileHeader />
         <MobileTabs />
+        <MobileCards />
       </>
     );
   } else {

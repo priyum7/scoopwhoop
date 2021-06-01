@@ -38,8 +38,8 @@ function App() {
         <div class="responsive_container">
           <Tabs />
           <Cards />
+          <Footer />
         </div>
-        <Footer />
       </div>
     );
   }

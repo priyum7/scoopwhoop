@@ -1,0 +1,27 @@
+.mobile_tab_outer {
+  flex: 1;
+  background: #999696;
+  height: 44px;
+}
+
+.mobile_tab_inner {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-bottom: 5px solid #999696; */
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  background-color: #efefef;
+  color: #999696;
+}
+
+.mobile_tab_outer_selected {
+  background: linear-gradient(158.35deg, #1b91ff 0, #9f49e3 113.59%);
+}
+
+.mobile_tab_inner_selected {
+  color: black;
+
+  background-color: white;
+}

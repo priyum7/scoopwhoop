@@ -11,7 +11,7 @@
   color: #999696;
 }
 
-.is_selected {
+.tab_selected {
   background: linear-gradient(158.35deg, #1b91ff 0, #9f49e3 113.59%);
   color: #fff;
 }

@@ -1,0 +1,17 @@
+.mobile_top_navigation_outer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  color: white;
+
+  box-sizing: border-box;
+}
+
+.mobile_top_navigation_outer img {
+  height: 100%;
+}

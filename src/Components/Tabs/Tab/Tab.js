@@ -9,7 +9,7 @@ function Tab(props) {
   return (
     <div
       className={`tab ${
-        props.tabSelected === props.title ? "is_selected" : ""
+        props.tabSelected === props.title ? "tab_selected" : ""
       }`}
       onClick={clickHandler}
     >

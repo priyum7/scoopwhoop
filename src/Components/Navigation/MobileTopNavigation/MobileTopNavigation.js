@@ -7,12 +7,12 @@ function MobileTopNavigation() {
   return (
     <div className="mobile_top_navigation_outer">
       <span className="top_nav_item">
-        <SearchIcon />
+        <SearchIcon style={{ fontSize: "30px" }} />
       </span>
 
       <img src={scoopwhooplogo} alt="ScoopWhoop Logo"></img>
       <span className="top_nav_item">
-        <MenuIcon />
+        <MenuIcon style={{ fontSize: "30px" }} />
       </span>
     </div>
   );

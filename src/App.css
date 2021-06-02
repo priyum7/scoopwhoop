@@ -6,6 +6,11 @@
   align-items: center;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 960px) {
   .responsive_container {
     margin-left: 0;

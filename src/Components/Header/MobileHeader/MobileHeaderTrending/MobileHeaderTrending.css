@@ -1,0 +1,13 @@
+.mobile_header_trending_outer {
+  display: flex;
+  overflow-x: scroll;
+  height: 455px;
+  padding: 10px;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.mobile_header_trending_outer::-webkit-scrollbar {
+  display: none;
+}

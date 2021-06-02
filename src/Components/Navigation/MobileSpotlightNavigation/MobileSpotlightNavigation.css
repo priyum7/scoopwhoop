@@ -1,0 +1,20 @@
+.spotlight_navigation_container {
+  display: flex;
+  height: 25px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.spotlight_navigation_container .spotlight_navigation_item {
+  background-color: #1b91ff;
+  color: #fff;
+  display: block;
+  padding: 10px 18px;
+  text-decoration: none;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height: 16px;
+}

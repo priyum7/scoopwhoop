@@ -8,11 +8,6 @@
   margin-bottom: 40px;
 }
 
-.card_outer a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .card_outer .article_img {
   box-sizing: border-box;
   margin-bottom: 25px;

@@ -1,13 +1,13 @@
 .mobile_tab_outer {
   flex: 1;
   background: #999696;
-  height: 44px;
+  height: 52px;
 }
 
 .mobile_tab_inner {
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   /* border-bottom: 5px solid #999696; */
   text-transform: uppercase;
   font-weight: bolder;
